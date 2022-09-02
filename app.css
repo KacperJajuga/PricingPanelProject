@@ -65,23 +65,36 @@ body {
     width: 100%;
     max-width: 960px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-plan:last-child {
+    border: none;
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 100%;
 }
 
 h2.pricing-header {
-    text-transform: uppercase;
     color: gray;
 }
 
 ul.pricing-features {
     color: rgb(32, 115, 238);
-    text-transform: uppercase;
     padding: 10px 0;
 }
 
 span.pricing-price {
     color: rgb(32, 115, 238);
-    text-transform: uppercase;
     padding: 20px 0 10px 0;
     font-size: x-large;
 }
