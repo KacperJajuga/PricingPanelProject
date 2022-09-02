@@ -84,24 +84,64 @@ body {
     max-width: 100%;
 }
 
-h2.pricing-header {
-    color: gray;
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
-ul.pricing-features {
-    color: rgb(32, 115, 238);
-    padding: 10px 0;
+.pricing-features {
+    margin: 50px 0 25px;
+    color: #016ff9;
 }
 
-span.pricing-price {
-    color: rgb(32, 115, 238);
-    padding: 20px 0 10px 0;
-    font-size: x-large;
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
 }
 
-a.pricing-button {
-    border: 1px solid rgb(32, 115, 238);
-    border-radius: 5px;
-    padding: 5px 15px;
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 15px 35px;
     text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    background-color: #48aaff;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
+    background-color: #269aff;
 }
