@@ -56,6 +56,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin: 10px;
 }
 
 .panel {
@@ -63,7 +64,7 @@ body {
     border-radius: 10px;
     padding: 15px 25px;
     width: 100%;
-    max-width: 960px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -80,8 +81,7 @@ body {
 
 .pricing-img {
     margin-bottom: 25px;
-    width: 100%;
-    max-width: 100%;
+    max-width: 70%;
 }
 
 .pricing-header {
@@ -144,4 +144,25 @@ body {
 
 .pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
     background-color: #269aff;
+}
+
+@media (min-width: 900px){
+    .panel {
+        flex-direction: row;
+        max-width: 850px;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+
+    .pricing-img {
+        max-width: 100%;
+    }
 }
