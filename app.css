@@ -44,3 +44,39 @@ table {
 
 /* CSS reset ends here */
 
+body {
+    background-color: rgb(73, 139, 238);
+}
+
+div.panel.pricing-table {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+h2.pricing-header {
+    text-transform: uppercase;
+    color: gray;
+}
+
+ul.pricing-features {
+    color: rgb(32, 115, 238);
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+span.pricing-price {
+    color: rgb(32, 115, 238);
+    text-transform: uppercase;
+    padding: 20px 0 10px 0;
+    font-size: x-large;
+}
+
+a.pricing-button {
+    border: 1px solid rgb(32, 115, 238);
+    border-radius: 5px;
+    padding: 5px 15px;
+    text-decoration: none;
+}
